@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Header Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+  }
+  
+  .site-header {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .site-header h1 {
+    font-size: 2.5rem;
+    color: #007BFF;
+  }
+  
+  /* Grid Layout for Emojis */
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+    justify-items: center;  /* Centering the items */
+  }
+  
+  /* Styling for Each Emoji Card */
+  .emoji {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+  }
+  
+  .emoji:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Emoji Icon Style */
+  .emoji .icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+  }
+  
+  /* Title for Emoji */
+  .emoji h2 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 12px;
+  }
+  
+  /* Paragraph Text Style */
+  .emoji p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 16px;
+  }
+  
+  /* Button/Link Style */
+  .emoji a {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    background-color: #6a4fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .emoji a:hover {
+    background-color: #4e34b1;
+  }
+  
+  /* Specific Order for the Cards (Matching the Screenshot Order) */
+  .emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+  }
+  
+  .emoji:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .emoji:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .emoji:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .emoji:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
